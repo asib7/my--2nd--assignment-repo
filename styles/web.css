@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8faff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links .cart-1 {
+  font-weight: bold;
+}
+.nav-links .cart-2 {
+  color: #8987a1;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.banner-text h1 span {
+  font-weight: bold;
+}
+
+.banner-text h1 strong {
+  color: #f15a24;
+  font-weight: bold;
+}
+
+.banner-text p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.banner-img {
+  flex: 1;
+  text-align: right;
+}
+
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  .nav-links .cart {
+    display: inline;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: left;
+    padding: 40px 20px;
+  }
+
+  .banner-img {
+    order: -1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .banner-text {
+    max-width: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 30px;
+  }
+}
