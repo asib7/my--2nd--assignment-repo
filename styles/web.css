@@ -258,6 +258,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  
 }
 
 .left-cards {
@@ -277,6 +278,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(60%);
 }
 
 .deal-card.small {
@@ -339,12 +341,6 @@ body {
   text-align: center;
   padding: 1rem;
 }
-
-/* .subscribe-content {
-  padding: 2rem;
-  max-width: 700px;
-  width: 100%;
-} */
 
 .subscribe-content h2 {
   font-family: "Noto Serif", serif;
@@ -592,9 +588,10 @@ body {
     font-size: 18px;
   }
 
+
   /* Deals Section */
   .latest-deals-section {
-    padding: 20px;
+    padding: 70px 20px;
   }
 
   .header h2 {
@@ -603,10 +600,18 @@ body {
 
   .header p {
     font-size: 18px;
+    padding: 0 10px;
   }
 
   .deals-container {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left-cards {
+    flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 
@@ -616,24 +621,34 @@ body {
     height: auto;
   }
 
-  .text-overlay,
+  .deal-card img {
+    height: auto;
+    filter: brightness(60%);
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 6rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+  }
+
   .text-overlay.center {
-    position: static;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: -70px;
+    left: 1rem;
+    right: 1rem;
+    top: 6rem;
+    text-align: center;
   }
 
-  .text-overlay h3 {
-    font-size: 20px;
-  }
-
-  .text-overlay>.zabo {
+  .text-overlay h3,
+  .text-overlay.center h3 {
     font-size: 30px;
   }
 
-  .text-overlay>.shop {
-    font-size: 16px;
+  .text-overlay a {
+    font-size: 20px;
   }
 
 
