@@ -8,7 +8,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: white;
   color: #333;
-  /* max-width: 1440px; */
   margin: 0 auto;
 }
 
@@ -450,16 +449,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   
@@ -664,7 +653,8 @@ body {
     font-size: 25px;
   }
   .subscribe-content>.subscribe-form{
-   width: 400px;
+    max-width: 300px;
+   /* width: 200px; */
   }
 
   .subscribe-form {
@@ -703,7 +693,7 @@ body {
 
   .footer-links {
     flex-direction: column;
-   margin-top: 20px;   
+    margin-top: 20px;   
   }
 
   .link-column {
