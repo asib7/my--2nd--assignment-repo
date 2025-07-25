@@ -653,8 +653,8 @@ body {
     font-size: 25px;
   }
   .subscribe-content>.subscribe-form{
-    max-width: 300px;
-   /* width: 200px; */
+    
+   width: 350px;
   }
 
   .subscribe-form {
