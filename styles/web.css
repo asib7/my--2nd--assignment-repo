@@ -654,7 +654,7 @@ body {
   }
   .subscribe-content>.subscribe-form{
     
-   width: 350px;
+   max-width: 400px;
   }
 
   .subscribe-form {
@@ -665,11 +665,13 @@ body {
 
   .subscribe-form input {
     font-size: 1rem;
+    
   }
 
   .subscribe-form button {
     font-size: 1rem;
     margin-left: 30px;
+    width: 200px;
   }
 
 
